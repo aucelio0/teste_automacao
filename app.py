@@ -1,5 +1,6 @@
 # biblioteca de automação
 import pyautogui as auto
+import time
 
 # atrasar os comandos
 auto.PAUSE = 0.5
@@ -17,15 +18,15 @@ auto.press('enter')
 
 # entrar na pag de login do git
 # for i in range(12):
-#     auto.press('tab')
+#    auto.press('tab')
     
 # auto.press('enter')
 
 # fazer login login
-# auto.write('aucelio0')j
-# auto.press('tab')
-# auto.write('M@ucelio12')
-# auto.press('enter')
+time.sleep(10)
+auto.press('tab')
+time.sleep(10)
+auto.press('enter')
 
 # ir até o repositório
 for i in range(12):
@@ -38,14 +39,14 @@ for i in range(12):
    auto.press('tab')
    
 # escrever nome do repositório
-auto.write('teste_automacao')
+time.sleep(10)
    
 # ir para descrição
 for i in range(2):
    auto.press('tab')
    
 # escrever a descrição e criar
-auto.write('testando automação de subir projeto para o repositório')
+time.sleep(15   )
 auto.press('enter')
 
 # voltar para o vscode
@@ -66,7 +67,7 @@ auto.write('git commit -m "versão 1.0"')
 auto.press('enter')
 auto.write('git branch -m main')
 auto.press('enter')
-auto.write('git remote add origin https://github.com/aucelio0/teste_automacao.git')
+time.sleep(10)
 auto.press('enter')
 auto.write('git push -u origin main')
 
